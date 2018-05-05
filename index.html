@@ -1,27 +1,38 @@
 <!DOCTYPE html>
 <html>
+
 <head>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Word Guess Game</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" type="text/css" href="assets/css/reset.css"/>
-    <link rel="stylesheet" type="text/css" href="assets/css/style.css"/>
-    <script src="assets/javascript/game.js"></script>
+    <title>Word Guess</title>
+    <link href="https://fonts.googleapis.com/css?family=Black+Ops+One|Bungee+Inline" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="assets/css/reset.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css" />
+
 </head>
-<body>
-    <h1>Let's play Hangman! Type a letter to start guessing!</h1>
-    <div class="container">
-        <div class="game-stats">
-            <p>
-                Guesses Remaining = 12
-            </p>
-            <p>
-                Letters Guessed = ________________
-            </p>
+
+<body background="assets/images/coffee-beans.jpg">
+    <div class="main-content">
+
+        <p class="game-title">
+
+            Word Guess Game
+        </p>
+        <p>
+            Type a letter to begin guessing!
+        </p>
+        <div id="word" class="word-container">
+
         </div>
-        
+        <div id="guesses" class="letters-guessed">
+
+        </div>
+        <div id="remaining-guesses" class="guesses-til-death">
+
+        </div>
+
     </div>
-    
 </body>
+<script src="assets/javascript/game.js"></script>
+
 </html>
